@@ -34,7 +34,7 @@ const Admin = () => {
 
         try {
             // Send question data to API endpoint
-            const response = await axios.post('http://localhost:3000/api/questions/', questionData);
+            const response = await axios.post('https://ssc-pyq-server.onrender.com/api/questions/', questionData);
 
             // Provide feedback to user
             setFeedback(`Success: Question "${questionText}" added.`);
