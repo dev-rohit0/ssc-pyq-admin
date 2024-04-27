@@ -28,7 +28,7 @@ const Admin = () => {
             question_text: questionText,
             options: optionsArray,
             correct_answer: correctAnswer,
-            year_asked: parseInt(yearAsked, 10),
+            year_asked: yearAsked,
             topic
         };
 
@@ -99,7 +99,7 @@ const Admin = () => {
                 <div className="form-group">
                     <label>Year Asked:</label>
                     <input
-                        type="number"
+                        type="text"
                         value={yearAsked}
                         onChange={(e) => setYearAsked(e.target.value)}
                         required
